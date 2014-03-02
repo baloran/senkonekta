@@ -1,12 +1,20 @@
 {
-  "name": "application-name",
+  "name": "SenKoneKta",
   "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node app.js"
   },
+  "main": "index.html",
+  "window": {
+    "toolbar": true,
+    "frame": false,
+    "width": 1024,
+    "height": 768
+  },
   "dependencies": {
     "express": "3.3.5",
-    "jade": "*"
+    "jade": "*",
+    "hogan-express": "~0.5.2"
   }
 }
