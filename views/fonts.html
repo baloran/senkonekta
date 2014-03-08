@@ -1,0 +1,18 @@
+<h1>Ici les fonts</h1>
+<input type="text" ng-model="search">
+		<select name="style" ng-model="style">
+			<option value="ALL">All</option>
+			<option value="sans-serif">Sans Serif</option>
+			<option value="serif">Serif</option>
+			<option value="display">Display</option>
+		</select>
+		<br> <hr>
+		<div class="content" ng-controller="ApiCtrl">
+			<div ng-repeat="font in fonts.data |filter:{family:search} | filter:{category:style}:true">
+				<p>
+					<strong>{{font.family}}</strong><br>
+					{{font.category}}
+				</p>
+				<hr>
+			</div>
+		</div>

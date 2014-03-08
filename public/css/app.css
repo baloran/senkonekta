@@ -1,0 +1,148 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+body {
+  -webkit-user-select: none;
+  background-color: #020b13;
+  color: white;
+}
+
+button, a {
+  -webkit-app-region: no-drag;
+}
+
+#header {
+  -webkit-app-region: drag;
+  height: 50px;
+  width: 100%;
+  background-color: #020a12;
+  background-image: -moz-linear-gradient(bottom, #010b15 0%, #010b13 100%);
+  background-image: -o-linear-gradient(bottom, #010b15 0%, #010b13 100%);
+  background-image: -webkit-linear-gradient(bottom, #010b15 0%, #010b13 100%);
+  background-image: linear-gradient(to top, #010b15 0%, #010b13 100%);
+  color: white;
+  top: 0;
+  right: 0;
+  left: 0;
+  position: fixed;
+  border-bottom: 1px solid #021323;
+}
+#header .btn-os {
+  width: 12px;
+  height: 12px;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  color: transparent;
+  display: inline-block;
+  padding: 0;
+  border: none;
+}
+#header .os {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+#header .os button {
+  display: block;
+}
+#header .os .close {
+  background-color: yellow;
+}
+
+.content {
+  margin-top: 50px;
+  overflow-x: hidden;
+  overflow-y: overlay;
+  -webkit-overflow-scrolling: touch;
+}
+.content::-webkit-scrollbar {
+  background: none;
+  width: 9px;
+}
+.content::-webkit-scrollbar-button {
+  display: none;
+}
+.content::-webkit-scrollbar-track {
+  display: none;
+}
+.content::-webkit-scrollbar-track-piece {
+  display: none;
+}
+.content::-webkit-scrollbar-thumb {
+  background: transparent;
+  background-clip: content-box;
+  border-radius: 10px;
+  border: 2px solid transparent;
+}
+.content::-webkit-scrollbar-corner {
+  display: none;
+}
+.content::-webkit-resizer {
+  display: none;
+}
+.content:hover::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.5);
+  background-clip: content-box;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+.content:hover::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.6);
+  background-clip: content-box;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}

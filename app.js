@@ -8,6 +8,11 @@ var routes = require('./routes');
 var user = require('./routes/user');
 var http = require('http');
 var path = require('path');
+var os = require('os');
+var gui = require('nw.gui'),
+win = gui.Window.get();
+
+console.log(gui);
 
 var app = express();
 
@@ -15,7 +20,6 @@ var app = express();
 app.set('port', process.env.PORT || 3000);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'html');
-app.engine('html',require('hogan-express'))
 app.use(express.favicon());
 app.use(express.logger('dev'));
 app.use(express.bodyParser());
