@@ -54,6 +54,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
+* {
+  outline: none;
+}
+
 body {
   -webkit-user-select: none;
   background-color: #020b13;
@@ -80,7 +84,12 @@ button, a {
   position: fixed;
   border-bottom: 1px solid #021323;
 }
-#header .btn-os {
+#header .os {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+#header .os .btn-os {
   width: 12px;
   height: 12px;
   -moz-border-radius: 30px;
@@ -91,16 +100,22 @@ button, a {
   padding: 0;
   border: none;
 }
-#header .os {
-  position: absolute;
-  top: 10px;
-  left: 15px;
-}
 #header .os button {
-  display: block;
+  display: inline-block;
+  background-color: #2D2D2D;
 }
-#header .os .close {
-  background-color: yellow;
+#header .os button:hover.close {
+  background-color: #e74c3c;
+}
+#header .os button:hover.minimize {
+  background-color: #f1c40f;
+}
+#header li {
+  display: inline-block;
+}
+#header li a {
+  color: white;
+  text-decoration: none;
 }
 
 .content {

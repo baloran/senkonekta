@@ -7,11 +7,12 @@
 			<option value="display">Display</option>
 		</select>
 		<br> <hr>
-		<div class="content" ng-controller="ApiCtrl">
+		<div class="content">
 			<div ng-repeat="font in fonts.data |filter:{family:search} | filter:{category:style}:true">
 				<p>
 					<strong>{{font.family}}</strong><br>
-					{{font.category}}
+					{{font.category}} <br>
+					{{present(font.family)}}
 				</p>
 				<hr>
 			</div>

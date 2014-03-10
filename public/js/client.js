@@ -24,18 +24,22 @@ $(function () {
 	$('.btn-os.close').click(function (e) {
 		e.preventDefault();
 		win.close();
-		console.log("hello")
 	});
+	$('.btn-os.minimize').click(function (e) {
+		e.preventDefault();
+		win.minimize();
+	});
+
 });
 
 
 
 
 // When Want close
-win.on('close', function() {
-    if (confirm("coucou ")) {
-        this.close(true);
-    }
-});
+// win.on('close', function() {
+//     if (confirm("coucou ")) {
+//         this.close(true);
+//     }
+// });
 
 win.title = 'SenKoneKta';
